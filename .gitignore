@@ -1,1 +1,4 @@
-Project*.json
+data/*.csv
+
+!data/2014_08_11.csv
+!data/2015_08_11.csv
