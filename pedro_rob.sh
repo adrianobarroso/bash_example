@@ -7,7 +7,7 @@
 year=$1
 month=$2
 day=$3
-echo -ne "\n\n Starting to scrap data for ${year}-${month}-${day} \n\n"
+echo -ne "\n\n Start scrap data for ${year}-${month}-${day} \n\n"
 
 DATA_DIR=data
 mkdir -p $DATA_DIR
@@ -33,7 +33,11 @@ echo -ne $data | head -n10
 file_output=$DATA_DIR/${year}_${month}_${day}.csv
 
 echo -ne '------------------------------'
-echo -ne "\n\n Persist data on file ${file_output} \n\n"
+echo -ne "\n\n Persist data on file ${file_output} \n"
 echo -ne '------------------------------\n\n'
 echo -ne "day,time,precipitation,temperature,mean_wind_speed,mean_wind_speed,mean_wind_dir,max_wind_speed,max_wind_dir,sunshine\n" > $file_output
 echo -ne $data >> $file_output
+
+
+echo -ne "\n\n Finish\n"
+echo -ne '------------------------------\n\n'
