@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Input arguments year month day
+#
+# Usage:
+#   $bash pedro_rob.sh 2015 10 11
 year=$1
 month=$2
 day=$3
